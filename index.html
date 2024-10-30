@@ -1,0 +1,574 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style1.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@3.3.7/dist/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="style.scss" class="scss">
+
+
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@500&display=swap" rel="stylesheet">
+<script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDO0djPN4MeE0hk7yjp_qadwUYuN8wUVM4&libraries=places"></script>
+<link rel="icon" type="image/gif" href="Image/Drivery-logos_white.png">
+<!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+<script src="js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/themes/smoothness/jquery-ui.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.13.2/jquery-ui.min.js"></script> -->
+<link rel="stylesheet" href="//code.jquery.com/ui/1.13.2/themes/base/jquery-ui.css">
+<link rel="stylesheet" href="/resources/demos/style.css">
+<script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+<script src="https://code.jquery.com/ui/1.13.2/jquery-ui.js"></script>
+<script src="https://kit.fontawesome.com/f9a0ab92b5.js" crossorigin="anonymous"></script>
+    <script src="https://kit.fontawesome.com/8e2bd9acb0.js" crossorigin="anonymous"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="icon" type="image/gif" href="Image/Drivery-logos_white.png">
+<link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+<style>
+  /* General styles for the contact section */
+  #formContainer {
+            font-family: Arial, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f3f4f6;
+            margin: 0;
+        }
+  #contact {
+            background-color: #8cc63f;
+            padding: 40px 30px;
+            border-radius: 8px;
+            box-shadow: 0px 4px 12px rgba(0, 0, 0, 0.1);
+            max-width: 600px;
+            width: 100%;text-align: center;
+
+        }
+        #contact h3 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 20px;
+        }
+        #form span {
+            display: block;
+            font-weight: bold;
+            color: #fff;
+            margin-bottom: 5px;
+        }
+        #form input[type="text"],
+        #form textarea,
+        #form input[type="submit"] {
+            width: 100%;
+            padding: 12px;
+            font-size: 16px;
+            border: none;
+            border-radius: 20px;
+            margin-bottom: 15px;
+            box-sizing: border-box;
+        }
+        #form input[type="text"],
+        #form textarea {
+            background-color: #f0f0f0;
+            color: #333;
+            outline: none;
+            transition: all 0.3s ease;
+        }
+        #form input[type="text"]:focus,
+        #form textarea:focus {
+            background-color: #e2e8f0;
+        }
+        #form input[type="submit"] {
+            background-color: #333;
+            color: #fff;
+            cursor: pointer;
+            transition: background-color 0.3s ease;
+        }
+        #form input[type="submit"]:hover {
+            background-color: #555;
+        }
+        textarea {
+            resize: none;
+            height: 100px;
+        }
+</style>
+
+</head>
+
+<body>
+    <!-- Start Header Section
+    =====================================================-->
+    <div class="header overlay">
+        <!-- Header Top -->
+        <div class="header-top">
+          <div class="container">
+            <div class="row space-btween">
+              <div class="grid">
+                <div class="left">
+                  
+                  <span>
+                    
+                    <i class="far fa-clock"></i>
+
+                    namanganstateuniversiteti@gmail.com
+                  </span>
+                  <span>
+                    <i class="fas fa-phone"></i>
+                    +919953126603
+                  </span>
+                </div>
+              </div>
+              <div class="grid">
+                <div class="right flex">
+                  <a href="https://www.facebook.com/people/Namangan-State-University/61564183270283/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                  <a href="https://www.instagram.com/namanganstatemeduniversity?igsh=MWFzZThjN2dxcTRzNw==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                  <a href="namanganstateuniversiteti@gmail.com" target="_blank" aria-label="Gmail"><i class="fas fa-envelope"></i></a> <!-- Font Awesome icon for email -->
+                  <a href="https://whatsapp.com/channel/0029Varg71xLdQeY8aLhpm1l" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Header Navbar -->
+        <div class="navbar">
+          <div class="container">
+            <div class="row space-btween items-center">
+              <div class="grid">
+                <div class="logo">
+                  
+                  <h1 class="upper"><a href="#"> The Abroad MBBS</a></h1>
+                </div>
+              </div>
+              <div class="grid hidden-x">
+                <div class="nav-list hidden-xs">
+                  <ul class="classic-list capital flex">
+                    <li><a class="active" href="#">home</a></li>
+                    <li><a href="#">about us</a></li>
+                    <li><a href="#">our services</a></li>
+                    <li><a href="#">contact us</a></li>
+                  </ul>
+                </div>
+              </div>
+              <i
+                 >
+              </i>
+            </div>
+          </div>
+        </div>
+        <!-- Header Content -->
+        <div class="header-content">
+          <div class="container">
+            <div class="info col-md-7">
+              <h2 class="upper main-color">we are ready to help you</h2>
+              <h3 class="upper h1">Study Abroad <br />& consulting in INDIA</h3>
+              <p>
+                <ul id="bulltePoints">
+                    <li>MBBS Course Starting from  1200$/semester</li>
+                    <li>Addmission Letter in less than 48 hours</li>
+                    <li>WHO & NMC  approved Universities</li>
+                    <li>Free Consultation </li>
+                    <li>Easy Online Addmission Process</li>
+
+
+                </ul>
+              </p>
+              <a href="#formBody"><button class="btn" >Apply Now</button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Header Section
+          =====================================================-->
+      
+      <!-- Start Request a call 
+          ==================================================== -->
+      <div class="header-bottom">
+        <div class="container">
+          <div class="row space-btween">
+            <div class="call-info">
+              <h4>Join the WhatsApp Group Right Now !</h4>
+              <p>
+                
+              </p>
+            </div>
+            <div class="contact txt-right">
+              <a href="https://whatsapp.com/channel/0029Varg71xLdQeY8aLhpm1l">  <button class="btn">  Join Now </button></a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Request a call 
+          ===================================================== -->
+         <div id="formBody">
+            <div id="form-container" class="form-container">
+                <h2>Request A Call Back</h2>
+                <p>Please fill in the form below to register</p>
+            
+                <form>
+                    <input type="text" placeholder="Full Name" required>
+                    <input type="email" placeholder="E-Mail Address" required>
+                    <input type="tel" placeholder="Contact No" pattern="[0-9]{10}" required>
+            
+                    <select required>
+                        <option value="" disabled selected>Choose a Country</option>
+                        <option value="Uzbekistan">Uzbekistan</option>
+                        <option value="Kazakhstan">Kazakhstan</option>
+                        <option value="Kyrgyzstan">Kyrgyzstan</option>
+                        <option value="Russia">Russia</option>
+                        <option value="Ukraine">Ukraine</option>
+                        <option value="Philippines">Philippines</option>
+                        <option value="Other">Other</option>
+                    </select>
+            
+                    <button type="submit">Register</button>
+                </form>
+            </div>
+         </div>
+      <!-- Start Financail Services
+          ===================================================== -->
+      <div class="services pd-t-b-50">
+        <div class="container">
+          <div class="services-header txt-center">
+            <h2 class="h2 capital mg-bottom-15">
+              why to choose  <span class="main-color">The MBBS Abroad</span>
+            </h2>
+            <p class="upper">
+              Expert Guidance & Support &
+              Transparent Services
+
+            </p>
+          </div>
+          <div class="services-content">
+            <div class="row">
+              <div class="grid col-md-4">
+                <div class="services-item">
+                  <div class="imge">
+      
+                    <img class="responsive-img" 
+                         src="hostelNamangan.jpg" 
+                         alt="4" border="0">
+                  </div>
+                  <div class="services-item-info">
+                    <h3 class="capital">Safe & Comfortable Hostel</h3>
+                    <p>
+                      Offer safe, well-maintained hostels with 24/7 security and essential amenities like Wi-Fi, study areas, and recreation spaces, creating an ideal balance between study and relaxation
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="grid col-md-4">
+                <div class="services-item">
+                  <div class="imge">
+      
+                    <img class="responsive-img" 
+                         src="classRoomNAma.jpg" 
+                         alt="6" border="0">
+                  </div>
+                  <div class="services-item-info">
+                    <h3 class="capital">Modern & Interactive Classroom</h3>
+                    <p>
+                     
+                      Engaging, interactive learning experiences with modern classrooms. Equipped with advanced tools, these spaces support hands-on learning and active participation
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+              <div class="grid col-md-4">
+                <div class="services-item">
+                  <div class="imge">
+      
+                    <img class="responsive-img" 
+                         src="labNamanhan.jpg" 
+                         alt="1" border="0">
+                  </div>
+                  <div class="services-item-info">
+                    <h3 class="capital">Cutting-Edge Laboratory Facilities
+
+
+
+                    </h3>
+                    <p>
+                      Advanced labs with the latest technology give students hands-on experience, building practical skills and understanding complex medical concepts
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Financail Services
+          ===================================================== -->
+      
+      <!-- Start Solution For Business
+          ====================================================  -->
+      <div class="solution overlay pd-t-b-50">
+        <div class="container">
+          <div class="row flex-col space-btwen">
+            <div class="grid col-sm-11 col-md-9 col-lg-6">
+              <div class="left-item">
+                <p class="upper">We are Your Gateway to Global Medical Education.</p>
+                <h2 class="h2 mg-bottom-15">
+                  We have Soltions for your
+                  <span class="main-color">Abroad Education</span>
+                </h2>
+                <p class="desc">
+                  Start your journey to study medicine abroad with us! We know that pursuing a medical degree overseas can be challenging, so we provide complete solutions to make it easy and stress-free. With our help, you'll find the right program, navigate the application process, and get the support you need to focus on your studies and future career
+                </p>
+                <p class="desc">
+                  We're here to make your dream a reality and ensure you feel confident every step of the way. Let us help you unlock the door to a world of opportunities in medical education!.
+                </p>
+                <a class="btn" href="#formBody">Apply Now </a>
+              </div>
+            </div>
+            <div class="grid col-lg-6">
+              <div class="right-item txt-center">
+                <div class="row flex-wrap">
+                  <div class="grid col-xsm-6 col-sm-6 col-md-3 col-lg-6">
+                    <div class="box">
+                      <span class="main-color">7 +</span>
+                      <p>Countries</p>
+                    </div>
+                  </div>
+                  <div class="grid col-xsm-6 col-sm-6 col-md-3 col-lg-6">
+                    <div class="box">
+                      <span class="main-color">1200$/Sem</span>
+                      <p>Lowest Fees</p>
+                    </div>
+                  </div>
+                  <div class="grid col-xsm-6 col-sm-6 col-md-3 col-lg-6">
+                    <div class="box">
+                      <span class="main-color">Null</span>
+                      <p>No Entrance Require</p>
+                    </div>
+                  </div>
+                  <div class="grid col-xsm-6 col-sm-6 col-md-3 col-lg-6">
+                    <div class="box">
+                      <span class="main-color">5+1 years</span>
+                      <p>Course  Duration</p>
+
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- End Solution For Business
+          ====================================================  -->
+      
+       <!-- Start About Our Company
+          ====================================================  -->
+          <div class="about-company pd-t-b-50">
+            <div class="container">
+              <div class="row">
+                <div class="grid col-md-6 hidden-xs">
+                  <div class="left-image">
+                    <img class="responsive-img"
+                         src="missDoctor.jpg" 
+                         alt="8" border="0">
+                  </div>
+                </div>
+                <div class="grid col-md-10 col-lg-6">
+                  <div class="right-info">
+                    <p class="upper"></p>
+                    <h2 class="h2 mg-bottom-15">
+                      
+                      Guiding || Excellence<span class="main-color"> The Abroad MBBS</span>
+                    </h2>
+                    <p class="desc">
+                      Start your medical journey with our MBBS course at an affordable price! Receive your admission letter in less than 48 hours from WHO and NMC-approved universities. Our free consultation service makes the easy online admission process hassle-free.m?
+                    </p>
+                    <p class="desc">
+                      Over the six years of the program, including a hands-on internship, you'll learn essential medical knowledge and gain practical experience in clinical settings. Get ready to interact with patients and develop the skills needed for a successful career in healthcare!
+                    </p>
+                   
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>                                       
+          <!-- Start About Our Company
+          ====================================================  -->
+                                                  
+           <!-- Start They Say About Us
+          ====================================================  -->
+          
+          <!-- End They Say About Us
+         ======================================================= -->
+                                                                                  
+                                                                                  <!-- Start Contact Us
+          =====================================================  -->
+        
+                         
+          <!-- End Contact Us
+          ====================================================  -->
+      
+                                                        <!-- Start Logo Text
+          =====================================================  -->
+          
+           
+          <!-- End Logo Text
+          =====================================================  -->
+                                 
+                                   <!-- Start Footer
+          =====================================================  -->
+          <div class="footer">
+            <div class="footer-top">
+                <div class="container">
+                    <div class="row flex-wrap">
+                        <div class="grid col-sm-6 col-md-6">
+                            <div class="social-media">
+                                <h3 class="capital">Education Consulting Services</h3>
+                                <p>We offer expert guidance and support throughout the entire process, including</p>
+                                <div class="icons flex">
+                                  <a href="https://www.facebook.com/people/Namangan-State-University/61564183270283/" target="_blank" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+                                  <a href="https://www.instagram.com/namanganstatemeduniversity?igsh=MWFzZThjN2dxcTRzNw==" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                                  <a href="namanganstateuniversiteti@gmail.com" target="_blank" aria-label="Gmail"><i class="fas fa-envelope"></i></a> <!-- Font Awesome icon for email -->
+                                  <a href="https://whatsapp.com/channel/0029Varg71xLdQeY8aLhpm1l" target="_blank" aria-label="WhatsApp"><i class="fab fa-whatsapp"></i></a>
+                                  <a href="https://www.linkedin.com/in/namangan-state-medical-university-b11741328/"><i class="fab fa-linkedin-in"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="grid col-sm-6 col-md-6">
+                            <div class="useful-links">
+                                <h3 class="capital">Inluded Services</h3>
+                                <ul class="classic-list"> 
+                                    <li><a href="#">Personalized Consultation</a></li>
+                                    <li><a href="#">Application Support</a></li>
+                                    <li><a href="#">Visa Assistance</a></li>
+                                    <li><a href="#">Pre-Departure Services</a></li>
+                                    <li><a href="#">Post-Arrival Services</a></li>
+                                </ul>
+                            </div>
+                        </div>
+                        
+                        <div class="grid col-sm-6 col-md-3">
+                            <!-- You can add additional content here if needed -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="container">
+                    <p class="capital txt-center">
+                        copyright&copy; 2024 The MBBS Abroad - design by <a href="#">The MBBS Abroad & Partner</a>
+                    </p>
+                </div>
+            </div>
+        </div>
+        
+          <!-- End Footer
+          =====================================================  -->
+          <script>
+contact                                                                           
+      
+          $("#contactForm").submit(function(event){ 
+    $("#spinner").show();
+    $("#contactMessage").hide();
+    
+   
+    //prevent default php processing
+    event.preventDefault();
+    //collect user inputs
+    var datatopost = $(this).serializeArray();
+//    console.log(datatopost);
+    //send them to signup.php using AJAX
+    $.ajax({
+        url: "contact.php",
+        type: "POST",
+        data: datatopost,
+        success: function(data){ // AJAX call successful:show error or success message
+            if(data){
+              $("#contactMessage").html(data);
+              $("#spinner").hide();
+                // $('#loginmessage').html(data);   
+                $("#contactMessage").slideDown();
+
+                // window.alert("Message has been sent Successfully");
+            }
+        },
+        error: function(){ // AJAX call fails:show ajax call error
+            // windowa.alert("Error!404");
+          $("#contactMessage").html("<div class='alert alert-danger'>There was an error with the Ajax Call. Please try again later.</div>");
+            
+        }
+    
+    });
+
+});
+//material contact form animation
+$(".contact-form")
+    .find(".form-control")
+    .each(function () {
+        var targetItem = $(this).parent();
+        if ($(this).val()) {
+            $(targetItem)
+                .find("label")
+                .css({
+                    top: "-6px"
+                    , fontSize: "16px"
+                    , color: "#ff512f"
+                });
+        }
+    });
+$(".contact-form")
+    .find(".form-control")
+    .focus(function () {
+        $(this)
+            .parent(".input-block")
+            .addClass("focus");
+        $(this)
+            .parent()
+            .find("label")
+            .animate({
+                    top: "-6px"
+                    , fontSize: "16px"
+                    , color: "#ff512f"
+                }
+                , 300
+            );
+    });
+$(".contact-form")
+    .find(".form-control")
+    .blur(function () {
+        if ($(this).val().length == 0) {
+            $(this)
+                .parent(".input-block")
+                .removeClass("focus");
+            $(this)
+                .parent()
+                .find("label")
+                .animate({
+                        top: "20px"
+                        , fontSize: "18px"
+                    }
+                    , 300
+                );
+        }
+    });
+
+</script>
+   
+     
+     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.3/jquery.min.js"></script>
+
+     <script src="js/bootstrap.min.js"></script>      
+      
+                                             
+</body>
+</html>
