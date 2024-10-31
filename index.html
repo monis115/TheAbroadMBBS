@@ -35,6 +35,39 @@
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="icon" type="image/gif" href="Image/Drivery-logos_white.png">
 <link href="https://fonts.googleapis.com/css2?family=Arvo&display=swap" rel="stylesheet">
+ <script src="https://cdn.jsdelivr.net/npm/emailjs-com@2.6.4/dist/email.min.js"></script>
+    <script>
+        (function() {
+            // Initialize EmailJS with your user ID
+            emailjs.init("eGJ1z4GLWTAfPAmS4");
+        })();
+        
+        function sendEmail(e) {
+            e.preventDefault(); // Prevent default form submission
+
+            // Collect form data
+            const fullName = document.querySelector('input[placeholder="Full Name"]').value;
+            const email = document.querySelector('input[placeholder="E-Mail Address"]').value;
+            const contactNo = document.querySelector('input[placeholder="Contact No"]').value;
+            const country = document.querySelector('select').value;
+
+            // Send email using EmailJS
+            emailjs.send("service_3zihqmv", "template_m5011dd", {
+                fullName: fullName,
+                email: email,
+                contactNo: contactNo,
+                country: country
+            })
+            .then((response) => {
+                // Display success message
+                document.getElementById("successMessage").style.display = "block";
+                console.log("Email sent successfully!", response.status, response.text);
+            })
+            .catch((error) => {
+                console.error("Email failed to send:", error);
+            });
+        }
+    </script>
 <style>
   /* General styles for the contact section */
   #formContainer {
@@ -209,31 +242,32 @@
       </div>
       <!-- End Request a call 
           ===================================================== -->
-         <div id="formBody">
-            <div id="form-container" class="form-container">
-                <h2>Registeration</h2>
-                <p>Please fill in the form below to register</p>
-            
-                <form>
-                    <input type="text" placeholder="Full Name" required>
-                    <input type="email" placeholder="E-Mail Address" required>
-                    <input type="tel" placeholder="Contact No" pattern="[0-9]{10}" required>
-            
-                    <select required>
-                        <option value="" disabled selected>Choose a Country</option>
-                        <option value="Uzbekistan">Uzbekistan</option>
-                        <option value="Kazakhstan">Kazakhstan</option>
-                        <option value="Kyrgyzstan">Kyrgyzstan</option>
-                        <option value="Russia">Russia</option>
-                        <option value="Ukraine">Ukraine</option>
-                        <option value="Philippines">Philippines</option>
-                        <option value="Other">Other</option>
-                    </select>
-            
-                    <button type="submit">Register</button>
-                </form>
+  <div id="formBody">
+        <div id="form-container" class="form-container">
+            <h2>Registration</h2>
+            <p>Please fill in the form below to register</p>
+
+            <form onsubmit="sendEmail(event)">
+                <input type="text" placeholder="Full Name" required>
+                <input type="email" placeholder="E-Mail Address" required>
+                <input type="tel" placeholder="Contact No" pattern="[0-9]{10}" required>
+                <select required>
+                    <option value="" disabled selected>Choose a Country</option>
+                    <option value="Uzbekistan">Uzbekistan</option>
+                    <option value="Kazakhstan">Kazakhstan</option>
+                    <option value="Kyrgyzstan">Kyrgyzstan</option>
+                    <option value="Russia">Russia</option>
+                    <option value="Ukraine">Ukraine</option>
+                    <option value="Philippines">Philippines</option>
+                    <option value="Other">Other</option>
+                </select>
+                <button type="submit">Register</button>
+            </form>
+            <div id="successMessage" style="display:none; color: green; margin-top: 10px;">
+                Registration successful! The admin has been informed.
             </div>
-         </div>
+        </div>
+    </div>
       <!-- Start Financail Services
           ===================================================== -->
       <div class="services pd-t-b-50">
